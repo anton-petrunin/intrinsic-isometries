@@ -4,7 +4,7 @@
 
 \begin{document}
 \title{Внутренние изометрии \\
-в евклидово пространство.}
+в евклидово пространство}
 \author{Антон Петрунин}
 \date{}
 \maketitle
@@ -49,14 +49,14 @@ $\dim \spc{X}\le d$,
 Тогда для любого $\eps>0$ 
 существует внутренняя изометрия $\imath\:\spc{R}\to\EE^d$
 такая,что
-$$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
+$$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 для любого $x\in \spc{R}$.
 
 В частности, любое $d$-мерное риманово пространство 
 допускает внутреннюю изометрию в $\EE^d$.
 \end{thm}
 
-Для изометрий на путях это теорема была доказана Громовым \cite[2.4.11]{gromov-PDE},
+Для изометрий на путях это теорема была доказана Михаилом Громовым \cite[2.4.11]{gromov-PDE},
 но доказательство работает для внутренних изометрий  без каких-либо изменений.
 Из этой теоремы следует, что произвольный предел возрастающей последовательности римановых метрик на фиксированном многообразии допускает внутреннюю изометрию в $\EE^d$,
 доказывается аналогично условию достаточности в основной теореме (\ref{main}).
@@ -66,7 +66,7 @@ $$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
 Пусть $\spc{P}$ есть полиэдр и $f\: \spc{P}\to\EE^d$ --- короткое отображение.
 Тогда для любого $\eps>0$ существует кусочно-линейная внутренняя изометрия $\imath\: \spc{P}\to \EE^d$ 
 такая, что
-$$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
+$$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 для любой точки $x\in \spc{P}$.
 \end{thm}
 
@@ -74,15 +74,15 @@ $$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
 Любой $d$-мерный полиэдр допускает кусочно-линейную внутреннюю изометрию в $\EE^d$.
 \end{thm}
 
-Следствие~\ref{zalgaller} было доказано Залгаллером \cite{zalgaller} для размерностей $\le 4$, 
+Следствие~\ref{zalgaller} было доказано Виктором Залгаллером \cite{zalgaller} для размерностей $\le 4$, 
 но небольшая модификация доказательста работает во всех размерностях,
-это было показано Крат \cite{krat}.
+это было показано Светланой Крат \cite{krat}.
 Двумерный случай вышеприведённой теоремы был также доказан Крат.
-Позже Акопян \cite{akopjan} обобщил это доказательство на все размерности,
+Позже Арсений Акопян \cite{akopjan} обобщил это доказательство на все размерности,
 используя кусочно-линейный аналог теоремы Нэша --- Кейпера.
 Эта теорема была доказана Брэмом \cite{brehm},
 но его работа на многие годы была оставлена без видимого внимания
-и передоказана независимо Акопяном и Тарасовым \cite{akopjan-tarasov}.
+и передоказана независимо Арсением Акопяном и Алексеем Тарасовым \cite{akopjan-tarasov}.
 
 
 
@@ -123,7 +123,7 @@ $$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
 \smallskip
 
 \parbf{Благодарности.}
-Автор выражет признательность А.~Акопяну, Д.~Бураго, С.~Иванову и анонимному референту за полезные письма и беседы.
+Автор выражает признательность Арсению Акопяну, Дмитрию Бураго, Сергею Иванову, Александру Лычаку и анонимному референту за полезные письма и беседы.
 
 
 
@@ -133,11 +133,11 @@ $$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
 \section{Предварительные замечания}\label{preliminaries}
 
 \parbf{Соглашения.}
-Расстояние между точками $x$ и $x'$ метрического пространства $\spc{X}$ будет обозначаться $|x x'|$ или $|x x'|_{\spc{X}}$.
+Расстояние между точками $x$ и $x'$ метрического пространства $\spc{X}$ будет обозначаться $|x -x'|$ или $|x -x'|_{\spc{X}}$.
 
 Отображение $f\:\spc{X}\to \spc{Y}$ между метрическими пространствами $\spc{X}$ и $\spc{Y}$ называется \emph{коротким},
 если  
-$$|f(x)f(x')|_{\spc{Y}}\le |x x'|_{\spc{X}}$$
+$$|f(x)-f(x')|_{\spc{Y}}\le |x -x'|_{\spc{X}}$$
 для любых $x,x'\in \spc{X}$.
 
 Пространство $\spc{P}$ с внутренней метрикой называется 
@@ -155,7 +155,7 @@ $(\spc{X}_n)_{n=0}^\infty$ и коротких отображений $\phi_{m,n}:\spc{X}_m\to \spc{
 Компактное метрическое пространство $\spc{X}$ 
 является \emph{обратным пределом системы $(\phi_{m,n}, \spc{X}_n)$} (для краткости $\spc{X}=\varprojlim \spc{X}_n$), если его подлежащее множество состоит из всех последовательностей $x_n\in \spc{X}_n$ таких, что $\phi_{m,n}(x_m)\z=x_n$ для всех $m\ge n$,
 и для двух таких последовательностей $(x_n)$ и $(x'_n)$ расстояние определяется как 
-$$|(x_n)\,(x'_n)|_{\spc{X}}=\lim_{n\to\infty}|x_n\, x'_n|_{\spc{X}_n}.$$
+$$|(x_n)-(x'_n)|_{\spc{X}}=\lim_{n\to\infty}|x_n- x'_n|_{\spc{X}_n}.$$
 
 Пусть $\spc{X}=\varprojlim \spc{X}_n$, тогда отображения $\psi_n\:\spc{X}\to \spc{X}_n$, определяемые как $\psi_n\:(x_i)_{i=0}^\infty\mapsto x_n$ называются \emph{проекциями}.
 Таким образом, $\psi_n=\phi_{m,n}\circ\psi_m$ для всех $m\ge n$. 
@@ -179,11 +179,11 @@ $$|(x_n)\,(x'_n)|_{\spc{X}}=\lim_{n\to\infty}|x_n\, x'_n|_{\spc{X}_n}.$$
 Пусть $\spc{X}$ и $\spc{Y}$ суть метрические пространства, 
 и $f\:\spc{X}\to \spc{Y}$ есть 
 непрерывное отображение.
-Для точек $x,x'\in \spc{X}$ последовательность точек $x=x_0,x_1,\dots,x_n=x'$ в $\spc{X}$ называется $\eps$-цепью из $x$ в $x'$, если $|x_{i-1}x_i|\le\eps$ для всех $i>0$.
+Для точек $x,x'\in \spc{X}$ последовательность точек $x=x_0,x_1,\dots,x_n=x'$ в $\spc{X}$ называется $\eps$-цепью из $x$ в $x'$, если $|x_{i-1}-x_i|\le\eps$ для всех $i>0$.
 Определим
 $$\dist_{f,\eps}(x,x')
 =
-\inf\l\{\sum_{i=1}^n|f(x_{i-1})f(x_{i})|_{\spc{Y}}\r\}$$
+\inf\l\{\sum_{i=1}^n|f(x_{i-1})-f(x_{i})|_{\spc{Y}}\r\}$$
 где инфимум взят по всем $\eps$-цепям $(x_i)_{i=0}^n$ из $x$ в $x'$.
 
 Заметим, что $\dist_{f,\eps}$ есть псевдометрика%
@@ -196,7 +196,7 @@ $$\dist_{f}(x,x')=\lim_{\eps\to0+}\dist_{f,\eps}(x,x').$$
 Псевдометрика $\dist_f\:\spc{X}\times\spc{X}\to[0,\infty]$ будет называться \emph{поднятием} метрики по $f$.
 
 Отображение $f\:\spc{X}\to \spc{Y}$ называется \emph{внутренней изометрией}, если 
-$$|xx'|_{\spc{X}}=\dist_f(x,x')$$
+$$|x-x'|_{\spc{X}}=\dist_f(x,x')$$
 для любых $x,x'\in \spc{X}$.
 
 Любая внутренняя изометрия является коротким отображением.
@@ -224,7 +224,7 @@ $$|xx'|_{\spc{X}}=\dist_f(x,x')$$
 $\spc{X}$ компактно и  непрерывное отображение $f\:\spc{X}\to \spc{Y}$ таково, что 
 $$\sup_{x,x'\in\spc{X}}\dist_f(x,x')<\infty.$$ 
 Тогда для любого $\eps>0$ существует $\delta=\delta(f,\eps)>0$ такое, что
-$$|f(x)\,h(x)|_{\spc{Y}}<\delta\ \ \text{для любой точки}\ \ x\in \spc{X}$$
+$$|f(x)-h(x)|_{\spc{Y}}<\delta\ \ \text{для любой точки}\ \ x\in \spc{X}$$
 влечёт 
 $$\dist_{f}(x,x')<\dist_{h}(x,x')+\eps\ \ \text{для любых}\ \ x,x'\in \spc{X}.$$
 
@@ -241,7 +241,7 @@ $$\dist_{f}(x,x')<\dist_{h}(x,x')+\eps\ \ \text{для любых}\ \ x,x'\in \spc{X}.$$
 $\spc{X}$ компактно и $f,h\:\spc{X}\to \spc{Y}$ --- два
 непрерывных отображения.
 
-Предположим, что $|f(x)h(x)|<\delta$ для любого $x\in \spc{X}$.
+Предположим, что $|f(x)-h(x)|<\delta$ для любого $x\in \spc{X}$.
 Тогда $$\dist_{f,\eps}(x,x')
 \le 
 \dist_{h,\eps}(x,x')+4\cdot\delta\cdot\pack_\eps \spc{X}.$$
@@ -250,16 +250,16 @@ $\spc{X}$ компактно и $f,h\:\spc{X}\to \spc{Y}$ --- два
 
 \parit{Доказательство.}
 Предположим, $\dist_{h,\eps}(x,x')<\ell$, то есть существует $\eps$-цепь $\{x_i\}_{i=0}^n$ из $x$ в $x'$ такая, что
-$$\sum_{i=1}^n|h(x_{i-1})\, h(x_i)|_{\spc{Y}}<\ell.\eqno(*)$$
-Поскольку $|h(x_i)f(x_i)|<\delta$,
-$$\dist_{f,\eps}(x,x')\le \sum_{i=1}^n|f(x_{i-1})\, f(x_i)|_{\spc{Y}}
-<\sum_{i=1}^n|h(x_{i-1})\, h(x_i)|_{\spc{Y}}+2\cdot n\cdot \delta$$
+$$\sum_{i=1}^n|h(x_{i-1})- h(x_i)|_{\spc{Y}}<\ell.\eqno(*)$$
+Поскольку $|h(x_i)-f(x_i)|<\delta$,
+$$\dist_{f,\eps}(x,x')\le \sum_{i=1}^n|f(x_{i-1})- f(x_i)|_{\spc{Y}}
+<\sum_{i=1}^n|h(x_{i-1})- h(x_i)|_{\spc{Y}}+2\cdot n\cdot \delta$$
 
 Предположим, $n$ есть минимальное число, для которого существует $\eps$-цепь, удовлетворяющая $(*)$.
 Достаточно показать, что 
 $$n< 2\cdot\pack_\eps \spc{X}.$$
 
-Если $n\ge 2\cdot\pack_\eps \spc{X}$, то найдутся $i$ и $j$ такие, что $j-i>1$ и $|x_ix_j|\le\eps$.
+Если $n\ge 2\cdot\pack_\eps \spc{X}$, то найдутся $i$ и $j$ такие, что $j-i>1$ и $|x_i-x_j|\le\eps$.
 Выбросим из цепи все элементы $x_k$ с $i<k<j$,
 то есть рассмотрим новую $\eps$-цепь 
 $$x=x_0,\dots,x_{i-1},x_i,x_j,x_{j+1},\dots,x_n=x'$$ 
@@ -278,7 +278,7 @@ $$\diam \imath(W)<\delta\ \ \Longrightarrow\ \ \diam W<\eps.$$
 
 \parit{Доказательство.}
 Предположим противное, то есть существует последовательность связных пространств $W_n\i \spc{X}$ такая, что $\diam \imath(W_n)\to 0$ и $\diam W_n>\eps$.
-Значит, существуют две последовательности точек $x_n,x_n'\z\in W_n$ такие, что $|x_n x_n'|\ge\eps$. 
+Значит, существуют две последовательности точек $x_n,x_n'\z\in W_n$ такие, что $|x_n -x_n'|\ge\eps$. 
 Поскольку $\spc{X}$ компактно,
 можно перейти к подпоследовательности $n$ так, что $x_n\to x$, $x_n'\to x'$ и $W_n\z\to W$ в смысле Хаусдорфа.
 Заметим, что связность $W_n$ влечёт связность $W$.
@@ -326,7 +326,7 @@ $\phi_{m,n}\: \spc{P}_m\to \spc{P}_n$
 для любого $\eps_{n+1}>0$ и кусочно-линейной внутренней изометрии $\imath_n\:\spc{P}_n\z\to \EE^d$
 существует кусочно-линейная внутренняя изометрия 
 $\imath_{n+1}\:\spc{P}_{n+1}\z\to \EE^d$ такая, что неравенство
-$$|\imath_{n+1}(x)\ \imath_{n}{\circ}\phi_{n+1,n}(x)|<\eps_{n+1}$$
+$$|\imath_{n+1}(x)- \imath_{n}{\circ}\phi_{n+1,n}(x)|<\eps_{n+1}$$
 выполняется для любой точки $x\in \spc{P}_n$.
 Остаётся показать, что последовательность $\eps_{n}$ может быть выбрана так, 
 что $\imath_n{\circ}\psi_n$ сходится к внутренней изометрии $\imath\:\spc{X}\z\to\EE^d$.
@@ -340,15 +340,15 @@ $$\eps_{n+1}<\tfrac12\min\l\{\eps_n,\delta(\imath_n,\tfrac1n)\r\},$$
 $$\imath=\lim_{n\to\infty} \imath_n\circ\psi_n,\ \ \imath\:\spc{X}\to\EE^d.$$
 Очевидно, что $\imath$ --- короткое.
 Далее,
-$$|\imath(x)\ \imath_n{\circ}\psi_n(x)|< \sum_{i=n+1}^\infty\eps_i<\delta(\imath_n,\tfrac1n)$$ 
+$$|\imath(x)- \imath_n{\circ}\psi_n(x)|< \sum_{i=n+1}^\infty\eps_i<\delta(\imath_n,\tfrac1n)$$ 
 для любого $x\in \spc{X}$.
 Так, согласно предложению~\ref{prop:pull-back},
 $$\dist_{\imath}(x,x')+\tfrac1n
 >
 \dist_{\imath_n\circ\psi_n}(x,x')
 \ge
-|\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}.$$
-Поскольку $|\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}\to |xx'|_{\spc{X}}$ при $n\to\infty$, отображение $\imath\:\spc{X}\to\EE^d$ есть внутренняя изометрия.\qeds
+|\psi_n(x)-\psi_n(x')|_{\spc{P}_n}.$$
+Поскольку $|\psi_n(x)-\psi_n(x')|_{\spc{P}_n}\to |x-x'|_{\spc{X}}$ при $n\to\infty$, отображение $\imath\:\spc{X}\to\EE^d$ есть внутренняя изометрия.\qeds
 
 
 \parit{Доказательство необходимости условия в \ref{main}.} 
@@ -394,9 +394,9 @@ $\psi_n=\phi_{m,n}\circ\psi_m$ при всех $m\ge n$.
 
 Чтобы доказать $\spc{X}=\varprojlim \spc{P}_n$, 
 достаточно проверить, что
-$$|xx'|_{\spc{X}}
+$$|x-x'|_{\spc{X}}
 \le
-\lim_{n\to\infty}|\psi_n(x)\,\psi_n(x')|\eqno(*)$$
+\lim_{n\to\infty}|\psi_n(x)-\psi_n(x')|\eqno(*)$$
 для всех $x,x'\in\spc{X}$.
 
 
@@ -411,7 +411,7 @@ $$r_n+\diam K<\delta\ \ \Longrightarrow\ \ \diam K^*<\eps \eqno(**)$$
 Предположим $(*)$ не верно,
 тогда можно выбрать $x,x'\in\spc{X}$ и $\eps,\ell>0$ такие, что
 \newcommand*{\threestar}{\mathrel{\vcenter{\offinterlineskip\hbox{$\mkern4.5mu {*}$}\hbox{${*}{*}$}}}}
-$$\dist_{\imath,\eps}(x,x')>\ell> |\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}\eqno(\threestar)$$
+$$\dist_{\imath,\eps}(x,x')>\ell> |\psi_n(x)-\psi_n(x')|_{\spc{P}_n}\eqno(\threestar)$$
 при всех $n$.
 В частности, для любого $n$ существует путь $\gamma_n\:[0,1]\to \spc{P}_n$ из $\psi_n(x)$ в $\psi_n(x')$ длины $<\ell$.
 Выберем $\delta=\delta(\imath,\eps)$ как в предложении~\ref{prop:diam-preimage}.
@@ -427,21 +427,21 @@ $m\le2\cdot\lceil\tfrac{\ell}{\delta}\rceil$.
 \newcommand*{\fivestar}{%
 \mathrel{\vcenter{\offinterlineskip
 \hbox{$\mkern4.5mu {*}{*}$}\hbox{${*}{*}{*}$}}}}
-$$|\imath(x_i)\ \imath_n{\circ}\gamma(t_i)|_{\EE^d}
+$$|\imath(x_i)- \imath_n{\circ}\gamma(t_i)|_{\EE^d}
 <2\cdot a_n.
 \eqno(\fivestar)$$
 Отметим, что $x_{i-1},x_i\in \gamma([t_{i-1},t_i])^*$.
 Значит, $(\fourstar)$ и $(**)$ влекут 
-$$|x_{i-1}x_i|<\diam \gamma_n([t_{i-1},t_i])^*<\eps$$
+$$|x_{i-1}-x_i|<\diam \gamma_n([t_{i-1},t_i])^*<\eps$$
 для всех достаточно больших $n$.
 Отсюда, точки $x_i$ образуют $\eps$-цепь из $x$ в $x'$, и $(\fivestar)$ влечёт
 \begin{align*}
  \dist_{\imath,\eps}(x,x')
 &\le 
-\sum_{i=1}^m|\imath(x_{i-1})\,\imath(x_i)|
+\sum_{i=1}^m|\imath(x_{i-1})-\imath(x_i)|
 <\\
 &<
-\sum_{i=1}^m|\imath_n{\circ}\gamma_n(t_{i-1})\ \imath_n{\circ}\gamma_n(t_i)|
+\sum_{i=1}^m|\imath_n{\circ}\gamma_n(t_{i-1})-\imath_n{\circ}\gamma_n(t_i)|
 +4\cdot a_n\cdot \lceil\tfrac{\ell}{\delta}\rceil
 <\\
 &<\ell+4\cdot a_n\cdot \lceil\tfrac{\ell}{\delta}\rceil,
@@ -464,7 +464,7 @@ $(\phi_{m,n},\spc{P}_n)$, образы $\phi_{m,n}$ образуют $\sqrt{d}\cdot a_n$-сеть 
 По теореме Радемахера (см. \cite[3.1.6]{ref-to-df}) дифференциал $d_p\imath$ определён для почти всех $p\in \Omega$.
 \item Пусть $\gamma(t)$ --- кривая с натуральным параметром в метрическом пространстве.
 Тогда 
-$$|\gamma({t_0})\,\gamma({t_0+\eps})|=\eps+o(\eps) $$
+$$|\gamma({t_0})-\gamma({t_0+\eps})|=\eps+o(\eps) $$
 для почти всех значений параметра $t_0$,
 см.  \cite[2.7.5]{BBI}.
 \end{enumerate}
@@ -516,7 +516,7 @@ $$\length \gamma=\length \imath\circ\gamma.$$
 
 В частности, аналог \ref{top-dim} не выполняется для изометрий на путях.
 
-Нижеприведённое построение пространства $\spc{X}$ подсказал мне Д.~Бураго;
+Нижеприведённое построение пространства $\spc{X}$ подсказал мне Дмитрий Бураго;
 оно использует две идеи: 
 (1) построение в \cite[3.1]{BIS},
 (2) построение \emph{псевдодуги Кнастера} в \cite{knaster} (см. также обзор \cite{pseudo.arc}).
@@ -570,7 +570,7 @@ $|h(t_i')-h(t_i)|\le\eps$ для $i\in\{1,2\}$.
 Значит, $\alpha$ has an arc of diameter at least $1-\eps_1$ in $\bar\Gamma\backslash \Gamma_1$;
 
 Значит, для пути $\alpha\:[0,1]\to\bar\Gamma$ общая длина 
-$\alpha\backslash \grave\Gamma$ не может быть меньше $|\alpha(0)\,\alpha(1)|_{\bar\Gamma}$.
+$\alpha\backslash \grave\Gamma$ не может быть меньше $|\alpha(0)-\alpha(1)|_{\bar\Gamma}$.
 Отсюда (\ref{extend}).
 
 \parit{Вторая часть.}
@@ -585,7 +585,7 @@ $\alpha\backslash \grave\Gamma$ не может быть меньше $|\alpha(0)\,\alpha(1)|_{\b
 Отметим, что естественные проекции $\varsigma_1,\varsigma_2\:\Gamma^{(2)}\to\Gamma$ являются короткими.
 Значит, для любого пути $\alpha\:[0,1]\to\bar\Gamma^2$ 
 общая длина $\alpha\backslash\grave\Gamma$ не может быть меньше
-$\max_i|\varsigma_i{\circ}\alpha(0)\, \varsigma_i{\circ}\alpha(1)|$.
+$\max_i|\varsigma_i{\circ}\alpha(0)- \varsigma_i{\circ}\alpha(1)|$.
 Таким образом, $\grave \Gamma^{(2)}$ билипшицево эквивалентно произведению $\grave\Gamma\times\grave\Gamma$.
 \qeds
 
@@ -613,7 +613,7 @@ $\max_i|\varsigma_i{\circ}\alpha(0)\, \varsigma_i{\circ}\alpha(1)|$.
 
 Этот вопрос можно переформулировать по-философски: 
 \textit{Есть ли существенная разница между пространствами всех внутренних метрик на двумерном многообразии и всех финслеровых метрик на нём же?}
-Этот вопрос, поставленный Д.~Бураго, положил начало настоящей статье (см. также \cite[теорема 1]{BIS}).
+Этот вопрос, поставленный Дмитрием Бураго, положил начало настоящей статье (см. также \cite[теорема 1]{BIS}).
 
 Заметим, что вложение Куратовского $x\mapsto \mathop{\rm dist}_x$ даёт решение следующего упражнения.
 
@@ -625,28 +625,39 @@ $\max_i|\varsigma_i{\circ}\alpha(0)\, \varsigma_i{\circ}\alpha(1)|$.
 Верно ли, что любая изометрия на путях из замкнутого евклидова шара в евклидово пространство является внутренней изометрией? 
 \end{thm}
 
-
+В двумерном случае ответ «да»;
+доказательство можно построить на идее Тараса Банаха \cite{banakh}.
 
 
 \begin{thebibliography}{52} 
-\bibitem[1]{akopjan} А.~В.~Акопян, {PL-аналог теоремы Нэша --- Кейпера}, предворительная версия:
+\bibitem{akopjan} А.~В.~Акопян, {PL-аналог теоремы Нэша --- Кейпера}, предворительная версия:
 \href{http://www.moebiuscontest.ru/files/2007/akopyan.pdf}{www.moebiuscontest.ru}
-\bibitem[2]{akopjan-tarasov} 
+
+\bibitem{akopjan-tarasov} 
 А.~В.~Акопян, А.~С.~Тарасов,
-\textit{Конструктивное доказательство теоремы Киршбрауна} Метем. заметки (2008) 84, № 5, 781---784 
-\bibitem[3]{BBI} Д. Ю. Бураго, Ю. Д. Бураго, С. В. Иванов. Курс метрической геометрии, - М. ; Ижевск, 2004, 496 с.
-\bibitem[4]{BIS} Burago, D.; Ivanov, S.; Shoenthal, D.   \textit{Two counterexamples in low dimensional length geometry,}
+\textit{Конструктивное доказательство теоремы Киршбрауна} Метем. заметки (2008) 84, № 5, 781---784. 
+
+\bibitem{BBI} Д. Ю. Бураго, Ю. Д. Бураго, С. В. Иванов. Курс метрической геометрии, - М. ; Ижевск, 2004, 496 с.
+
+\bibitem{BIS} Burago, D.; Ivanov, S.; Shoenthal, D.   \textit{Two counterexamples in low dimensional length geometry,}
 Алгебра и Анализ  19 (2007), № 1, стр. 46---59
-\bibitem[5]{brehm} Brehm, U., \textit{Extensions of distance reducing mappings to piecewise congruent mappings on $\RR^m$.}  J. Geom.  16  (1981), no. 2, 187--193.
-\bibitem[6]{gromov-PDE}  Громов М. Дифференциальные соотношения с частными производными, Мир, 1990 г.
-\bibitem[7]{zalgaller} В.~А.~Залгаллер,
+
+\bibitem{banakh} Banakh, T. \textit{Running most of the time in a connected set},  MathOverflow   \texttt{https://mathoverflow.net/q/308172},
+
+\bibitem{brehm} Brehm, U., \textit{Extensions of distance reducing mappings to piecewise congruent mappings on $\RR^m$.}  J. Geom.  16  (1981), no. 2, 187--193.
+
+\bibitem{gromov-PDE}  Громов М. Дифференциальные соотношения с частными производными, Мир, 1990 г.
+
+\bibitem{zalgaller} В.~А.~Залгаллер,
 \textit{Изометрические вложения полиэдров.}
 Доклады АН СССР 123 (1958) 599---601.
-\bibitem[8]{knaster} Knaster, B. Un continu dont tout sous-continu est ind\'ecomposable. Fundamenta math. 3, 247--286 (1922).
+
+\bibitem{knaster} Knaster, B. Un continu dont tout sous-continu est ind\'ecomposable. Fundamenta math. 3, 247--286 (1922).
 \bibitem[9]{krat} Krat, S. \textit{Approximation Problems in Length Geometry,} thesis, 2005
 %\bibitem[10]{pseudo.arc} Nadler, Sam B., Jr. \textit{Continuum theory. An introduction.} Monographs and Textbooks in Pure and Applied Mathematics, 158. Marcel Dekker, Inc., New York, 1992. xiv+328 pp. 
-\bibitem[10]{pseudo.arc}Lewis, Wayne The pseudo-arc. Bol. Soc. Mat. Mexicana (3) 5 (1999), no. 1, 25--77.
-\bibitem[11]{ref-to-df} Г.~Федерер, \textit{Геометрическая теория меры.} М.: Наука, 1987
+\bibitem{pseudo.arc}Lewis, Wayne The pseudo-arc. Bol. Soc. Mat. Mexicana (3) 5 (1999), no. 1, 25--77.
+
+\bibitem{ref-to-df} Г.~Федерер, \textit{Геометрическая теория меры.} М.: Наука, 1987
 \end{thebibliography}
 
 \end{document}

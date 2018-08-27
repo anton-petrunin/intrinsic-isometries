@@ -99,12 +99,12 @@ pdfauthor={Anton Petrunin},
 
 \begin{abstract}
 I consider compact metric spaces which admit intrinsic isometries to Euclidean $d$-space.
-The main result roughly states that the class of these spaces coincides with class of inverse limits of Euclidean $d$-polyhedra. 
+The main result roughly states that the class of these spaces coincides with class of inverse limits of Euclidean $d$-polyhedrons. 
 \end{abstract}
 
 \section{Introduction} 
 
-The \emph{intrinsic isometries} are defined in section~\ref{preliminaries};
+The \emph{intrinsic isometries} are defined in Section~\ref{preliminaries};
 it is a variation of notion of \emph{path isometry}, that is a map that preserves the lengths of curves.
 Any intrinsic isometry is a path isometry, the converse does not hold in general.
 
@@ -117,8 +117,8 @@ $\dim \spc{X}\le d$,
 where $\dim$ denotes the Lebesgue's covering dimension.
 \end{thm}
 
-This statement is proved in section~\ref{proofs}.
-An analogous statement for path isometry does not hold, see example~\ref{exam:path}.
+This statement is proved in Section~\ref{proofs}.
+An analogous statement for path isometry does not hold, see Example~\ref{exam:path}.
 The Hausdorff dimension cannot be bounded on the similar way.
 For example, $\RR$-tree admits an intrinsic isometry to $\RR$ and it contains compact subsets of arbitrary large Hausdorff dimension.
 
@@ -135,13 +135,13 @@ and $f\:\spc{R}\to\EE^d$ be a short map%
 .
 Then given $\eps>0$, 
 there is an intrinsic isometry $\imath\:\spc{R}\to\EE^d$ such that 
-$$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
+$$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 for any $x\in \spc{R}$.
 
 In particular, any Riemannian $d$-space admits an intrinsic isometry to $\EE^d$.
 \end{thm}
 
-For path isometries, this theorem was proved in \cite[2.4.11]{gromov-PDE},
+For path isometries, this theorem was proved by Mikhael Gromov \cite[2.4.11]{gromov-PDE},
 and the same proof works for intrinsic isometries.
 Applying this theorem, one can show 
 that any limit of increasing sequence of Riemannian metrics on a fixed $d$-dimensional manifold admits an intrinsic isometry to $\EE^d$.
@@ -152,7 +152,7 @@ In particular, any sub-Riemannian metric on $d$-dimensional manifold admits an i
 Let $\spc{P}$ be a Euclidean polyhedron and $f\: \spc{P}\to\EE^d$ be a short map.
 Then, given $\eps>0$, there is a piecewise linear intrinsic isometry 
 $\imath\: \spc{P}\to \EE^d$ such that
-$$|f(x)\,\imath(x)|_{\EE^d}<\eps$$
+$$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 for any $x\in \spc{P}$.
 \end{thm}
 
@@ -160,20 +160,19 @@ for any $x\in \spc{P}$.
 Any $d$-dimensional Euclidean polyhedron admits a piecewise linear intrinsic isometry to $\EE^d$.
 \end{thm}
 
-The corollary was proved in \cite{zalgaller} for dimension $\le 4$, 
-but a slight modification of the proof works in all dimensions, 
+The corollary was proved by Viktor Zalgaller \cite{zalgaller} for dimension $\le 4$, 
+but a slight modification of his proof works in all dimensions, 
 see \cite{krat}.
-The 2-dimensional case of this theorem was proved in \cite{krat}.
-Later, the proof was extend to all dimensions in \cite{akopjan}; the proof use a \emph{piecewise linear analog of Nash--Kuiper theorem}.
-This theorem was proved in \cite{brehm},
-but this work was left without attention for many years
-and reproved independently in  \cite{akopjan-tarasov}.
+The 2-dimensional case of Theorem~\ref{PL-Nash} was proved by Svetlana Krat \cite{krat}.
+Later, the proof was extend to all dimensions by Arseniy Akopyan \cite{akopjan}.
+His proof use a \emph{piecewise linear analog of Nash--Kuiper theorem} which was proved by Ulrich Brehm \cite{brehm},
+and reproved independently by  Arseniy Akopyan and Alexey Tarasov~\cite{akopjan-tarasov}.
 
 
 \parbf{Iff-condition.} Now we describe the main result of the paper.
 
 A compact metric space $\spc{X}$ is called \emph{pro-Euclidean space of rank $\le d$} 
-if it can be presented as an \emph{inverse limit} $\spc{X}=\varprojlim \spc{P}_n$ (see section~\ref{preliminaries}) of a sequence of Euclidean $d$-polyhedra $\spc{P}_n$.
+if it can be presented as an \emph{inverse limit} $\spc{X}=\varprojlim \spc{P}_n$ (see Section~\ref{preliminaries}) of a sequence of Euclidean $d$-polyhedrons $\spc{P}_n$.
 
 \begin{thm}{Main theorem}\label{main}
 A compact metric space $\spc{X}$ admits an intrinsic isometry to $\EE^d$ 
@@ -184,16 +183,16 @@ The proof is straightforward.
 I like the formulation of the theorem.
 It is rare when inverse limits help to solve a natural problem in metric geometry;
 the only other example I know is the charcterization of  homogeneous
-locally compact metric spaces given in \cite{berestovskii}.
+locally compact metric spaces given by Valerii Berestovskii~\cite{berestovskii}.
 
 Note that the statement in theorem \ref{thm:gromov} (in the compact case) 
 is equivalent to the fact that any compact Riemannian 
 $d$-space is a pro-Euclidean space of rank $\le d$.
 The later can be obtained directly from the following exercise;
-this way the main theorem provides an alternative  proof to theorem \ref{thm:gromov} in the compact case.
+this way the main theorem provides an alternative  proof to Theorem~\ref{thm:gromov} in the compact case.
 
 \begin{thm}{Exercise}
-Show that any compact Riemannian space admits a Lipschitz approximation by Euclidean polyhedra.
+Show that any compact Riemannian space admits a Lipschitz approximation by Euclidean polyhedrons.
 \end{thm}
 
 
@@ -202,14 +201,19 @@ Let us remind  that \emph{Minkowski space} is finite dimensional real vector spa
 
 \begin{thm}{Proposition}\label{minkowski}
 Let $\Omega$ be an open subset of  Minkowski $d$-space $\MM^d$.
-Assume $\Omega$ admits an intrinsic\footnote{In fact the same is true for path isometry.} isometry  to $\EE^m$ then $d\le m$ and $\MM^d$ is isometric to a $\EE^d$.
+Assume $\Omega$ admits an intrinsic\footnote{In fact the same is true for path isometry.} isometry  to $\EE^m$ then $d\le m$ and $\MM^d$ is isometric to~$\EE^d$.
 \end{thm}
 
-In particular, the condition \ref{top-dim} on Lebesgue's dimension is not sufficient.
+In particular, the condition in \ref{top-dim} on Lebesgue's dimension is not sufficient.
 
 \smallskip
 
-I'm grateful to A.~Akopyan, D.~Burago, S.~Ivanov and anonymous referee for helpful letters and discussions.
+I'm grateful to 
+Arseniy Akopyan, 
+Dmitri Burago, 
+Sergei Ivanov,
+Alexander Lytchak
+and an anonymous referee for helpful letters and discussions.
 
 
 
@@ -219,12 +223,12 @@ I'm grateful to A.~Akopyan, D.~Burago, S.~Ivanov and anonymous referee for helpf
 \section{Preliminaries}\label{preliminaries}
 
 \parbf{Standard definitions.}
-Given a metric space $\spc{X}$ and two points $x,x'\in \spc{X}$, we will denote by $|x x'|=|x x'|_{\spc{X}}$ the distance from $x$ to $x'$ in $\spc{X}$.
+Given a metric space $\spc{X}$ and two points $x,x'\in \spc{X}$, we will denote by $|x-x'|=|x-x'|_{\spc{X}}$ the distance from $x$ to $x'$ in $\spc{X}$.
 
-A \emph{length space} is a metric space such that for any two points $x,x'$ the distance $|x x'|$ coincides with the infimum of lengths of curves connecting $x$ and $x'$.
+A \emph{length space} is a metric space such that for any two points $x,x'$ the distance $|x - x'|$ coincides with the infimum of lengths of curves connecting $x$ and $x'$.
 
 A map $f\:\spc{X}\to \spc{Y}$ between metric spaces $\spc{X}$ and $\spc{Y}$ is called \emph{short} if for any $x,x'\in \spc{X}$ we have
-$$|f(x)f(x')|_{\spc{Y}}\le |x x'|_{\spc{X}}.$$
+$$|f(x)-f(x')|_{\spc{Y}}\le |x -x'|_{\spc{X}}.$$
 
 A length space
 $\spc{P}$ is called \emph{Euclidean $d$-polyhedron} if there is a finite triangulation of $\spc{P}$ such that each simplex is isometric to a simplex in $\EE^d$% and maximal dimension of simplex is equal $d$
@@ -239,7 +243,7 @@ that is,
 \end{enumerate}
 
 A compact metric space $\spc{X}$ is called \emph{inverse limit of the system $(\phi_{m,n}, \spc{X}_n)$} (denoted by $\spc{X}=\varprojlim \spc{X}_n$) if its underling space consists of all sequences $x_n\in \spc{X}_n$ such that $\phi_{m,n}(x_m)=x_n$ for all $m\ge n$ and for two such sequences $(x_n)$ and $(x'_n)$ the distance is defined by 
-$$|(x_n)\,(x'_n)|_{\spc{X}}=\lim_{n\to\infty}|x_n\, x'_n|_{\spc{X}_n}.$$
+$$|(x_n)-(x'_n)|_{\spc{X}}=\lim_{n\to\infty}|x_n- x'_n|_{\spc{X}_n}.$$
 
 If $\spc{X}=\varprojlim \spc{X}_n$, then the map $\psi_n\:\spc{X}\to \spc{X}_n$, defined by $\psi_n\:(x_i)_{i=0}^\infty\mapsto x_n$ are called \emph{projections}.
 Clearly $\psi_n=\phi_{m,n}\circ\psi_m$ for all $m\ge n$. 
@@ -263,56 +267,57 @@ Nevertheless, it is easy to see that if for any $\eps>0$ the images of $\phi_{m,
 
 \parbf{Intrinsic isometries and pull back metrics.}
 Let $\spc{X}$ and $\spc{Y}$ be metric spaces and  $f\:\spc{X}\to \spc{Y}$ be continuous map.
-Given two points $x,x'\in \spc{X}$, a sequence of points $x=x_0,x_1,\dots,x_n=x'$ is called $\eps$-chain from $x$ to $x'$ if $|x_{i-1}x_i|\le\eps$ for all $i>0$.
+Given two points $x,x'\in \spc{X}$, a sequence of points $x=x_0,x_1,\dots,x_n=x'$ is called $\eps$-chain from $x$ to $x'$ if $|x_{i-1}-x_i|\le\eps$ for all $i>0$.
 Set
 $$\dist_{f,\eps}(x,x')
 =
-\inf\l\{\sum_{i=1}^n|f(x_{i-1})f(x_{i})|_{\spc{Y}}\r\}$$
+\inf\l\{\sum_{i=1}^n|f(x_{i-1})-f(x_{i})|_{\spc{Y}}\r\}$$
 where the infimum is taken along all  $\eps$-chains $(x_i)_{i=0}^n$ from $x$ to $x'$.
 
-Clearly $\dist_{f,\eps}$ is a pre-metric%
+Clearly $\dist_{f,\eps}$ is a pseudometric%
 \footnote{That is, it satisfies triangle inequality, it is symmetric, non-negative and $\dist_{f,\eps}(x,x)=0$, but it might happen that $\dist_{f,\eps}(x,x')=0$ for $x\not=x'$.}
 on $\spc{X}$ and $\dist_{f,\eps}(x,x')$ is non-increasing in $\eps$.
 Thus, the following (possibly infinite) limit
 $$\dist_{f}(x,x')=\lim_{\eps\to0}\dist_{f,\eps}(x,x')$$
 is well defined.
-The pre-metric $\dist_f\:\spc{X}\times\spc{X}\to[0,\infty]$ will be called \emph{pull back metric} for $f$.
+The pseudometric $\dist_f\:\spc{X}\times\spc{X}\to[0,\infty]$ will be called the \emph{pull back metric} for $f$.
 
 A map $f\:\spc{X}\to \spc{Y}$ between length spaces $\spc{X}$ and $\spc{Y}$ is an \emph{intrinsic isometry} if 
-$$|xx'|_{\spc{X}}=\dist_f(x,x')$$
+$$|x-x'|_{\spc{X}}=\dist_f(x,x')$$
 for any $x,x'\in \spc{X}$.
 
 Any intrinsic isometry is a short map.
 Moreover, it is easy to see that intrinsic isometry preserves the lengths of curves.
-The converse does not hold, see section~\ref{path.isometry}.
+The converse does not hold, see Section~\ref{path.isometry}.
 
 \begin{thm}{Proposition}\label{int>int}
 Let $\spc{X}$ be a compact (or even proper\footnote{That is, all closed bounded sets in $\spc{X}$ are compact.}) metric space.
-Then existence of intrinsic isometry $f\:\spc{X}\to \spc{Y}$ implies that $\spc{X}$ is a length space.
+Then existence of an intrinsic isometry $f\:\spc{X}\to \spc{Y}$ implies that $\spc{X}$ is a length space.
 \end{thm}
 
 The proof is left to the reader.
-Note that for general $\spc{X}$ it is not true.
+Note that the proposition does not hold for general complete space $\spc{X}$.
 Consider two points which connected by countable number of unit intervals $\II_n$ 
 and one interval of length $\frac12$; 
-equip the obtained space with natural intrinsic metric.
+equip the obtained space with the natural intrinsic metric.
 Let us remove from our space the interval of length $\frac12$.
-The metric on the remaining space $\spc{X}$ is not intrinsic.
+The metric on the remaining space $\spc{X}$ is not intrinsic, but complete.
 Further let us construct a map $f\:\spc{X}\to\RR$ so that the restriction $f_n=f|_{\II_n}$ 
 is an intrinsic isometry, $f_n(0)=0$, $f_n(1)=\tfrac12$ and $f_n(x)$ converges uniformly to $\tfrac x2$.
 It is easy to see that $f\:\spc{X}\to\RR$ is an intrinsic isometry.
 
+The following statement is analogous to the semi-continuity of length functional.
 
 \begin{thm}{Proposition}\label{prop:pull-back} Let $\spc{X}$ and $\spc{Y}$ be metric spaces, $\spc{X}$ be compact and the continuous map $f\:\spc{X}\to \spc{Y}$ is such that
 $$\sup_{x,x'\in\spc{X}}\dist_f(x,x')<\infty.$$
 Then given $\eps>0$ there is $\delta=\delta(f,\eps)>0$ such that for any short map $h\:\spc{X}\to \spc{Y}$ such that
-$$|f(x)\,h(x)|_{\spc{Y}}<\delta\ \ \text{for any}\ \ x\in \spc{X}$$
+$$|f(x)-h(x)|_{\spc{Y}}<\delta\ \ \text{for any}\ \ x\in \spc{X}$$
 we have
 $$\dist_{f}(x,x')<\dist_{h}(x,x')+\eps$$
 for any $x,x'\in \spc{X}$.
 \end{thm}
 
-The proof is a direct application of the lemma \ref{lem:pull-back}.
+The proof is a direct application of the Lemma~\ref{lem:pull-back}.
 
 For a compact metric space $\spc{X}$, we denote by $\pack_\eps \spc{X}$ the maximal number of points in $\spc{X}$ on distance $>\eps$ from each other.
 Clearly $\pack_\eps \spc{X}$ is finite for any $\eps>0$.
@@ -321,7 +326,7 @@ Clearly $\pack_\eps \spc{X}$ is finite for any $\eps>0$.
 Let $\spc{X}$ and $\spc{Y}$ be metric spaces, 
 $\spc{X}$ is compact and $f,h\:\spc{X}\to \spc{Y}$ be two continuous maps.
 
-Assume for any $x\in \spc{X}$, $|f(x)h(x)|<\delta$ then
+Assume for any $x\in \spc{X}$, $|f(x)-h(x)|<\delta$ then
 for any $x,x'\in \spc{X}$ we have
 $$\dist_{f,\eps}(x,x')
 \le 
@@ -331,16 +336,16 @@ $$\dist_{f,\eps}(x,x')
 
 \parit{Proof.}
 Assume $\dist_{h,\eps}(x,x')<\ell$; that is, there is an $\eps$-chain $\{x_i\}_{i=0}^n$ from $x$ to $x'$ such that
-$$\sum_{i=1}^n|h(x_{i-1})\, h(x_i)|_{\spc{Y}}<\ell.\eqno(*)$$
-Since $|h(x_i)f(x_i)|<\delta$,
-$$\dist_{f,\eps}(x,x')\le \sum_{i=1}^n|f(x_{i-1})\, f(x_i)|_{\spc{Y}}
-<\sum_{i=1}^n|h(x_{i-1})\, h(x_i)|_{\spc{Y}}+2\cdot n\cdot \delta$$
+$$\sum_{i=1}^n|h(x_{i-1})- h(x_i)|_{\spc{Y}}<\ell.\eqno(*)$$
+Since $|h(x_i)-f(x_i)|<\delta$,
+$$\dist_{f,\eps}(x,x')\le \sum_{i=1}^n|f(x_{i-1})- f(x_i)|_{\spc{Y}}
+<\sum_{i=1}^n|h(x_{i-1})- h(x_i)|_{\spc{Y}}+2\cdot n\cdot \delta$$
 
 Assume $n$ is the smallest number for which there is an $\eps$-chain satisfying $(*)$.
 It is enough to show that 
 $$n< 2\cdot\pack_\eps \spc{X}.$$
 
-If $n\ge 2\cdot\pack_\eps \spc{X}$, there are $i$ and $j$ such that $j-i>1$ and $|x_ix_j|\le\eps$.
+If $n\ge 2\cdot\pack_\eps \spc{X}$, there are $i$ and $j$ such that $j-i>1$ and $|x_i-x_j|\le\eps$.
 Remove from this chain all elements $x_k$ with $i<k<j$;
 that is, consider new $\eps$-chain 
 $$x=x_0,\dots,x_{i-1},x_i,x_j,x_{j+1},\dots,x_n=x'$$
@@ -359,7 +364,7 @@ $$\diam \imath(W)<\delta\ \ \Longrightarrow\ \ \diam W<\eps.$$
 \parit{Proof.}
 Assume contrary; that is, there is a sequence of connected subsets $W_n\i \spc{X}$ such that 
 $\diam \imath(W_n)\to 0$ as $n\to\infty$ but $\diam W_n>\eps$.
-Thus there are two sequences of points $x_n,x_n'\in W_n$ such that $|x_n x_n'|\ge\eps$. 
+Thus there are two sequences of points $x_n,x_n'\in W_n$ such that $|x_n -x_n'|\ge\eps$. 
 Pass to a subsequence of $n$ so that $W_n\to W$ in Hausdorff sense and $x_n\to x$, $x_n'\to x'$.
 We obtain a closed connected subset $W\i \spc{X}$ with two distinct points $x$ and $x'$ such that $\imath(W)=p$ for some $p\in \spc{Y}$. 
 
@@ -382,60 +387,60 @@ that is, $\dist_{\imath}(x,x')=0$, a contradiction.
 \label{proofs}
 
 \parit{Proof of the trivial statement (\ref{top-dim}).}
-Given $\eps>0$ choose $\delta=\delta(\imath,\eps)$ as in proposition \ref{prop:diam-preimage}. 
+Given $\eps>0$ choose $\delta=\delta(\imath,\eps)$ as in Proposition~\ref{prop:diam-preimage}. 
 Since $\dim \EE^d=d$,
  there is a finite open covering $\{U_i\}_{i=1}^n$ of $\imath(\spc{X})$ with multiplicity $\le d+1$ and
 such that $\diam U_i<\delta$ for each $i$.
 
 Consider the covering $\{V_\alpha\}$ of $\spc{X}$ by connected components of $\imath^{-1}(U_i)$ for all $i$.
-According to proposition \ref{int>int}, $\spc{X}$ is a length space.
+According to Proposition~\ref{int>int}, $\spc{X}$ is a length space.
 In particular,
 all sets $V_\alpha$ are open.
-According to proposition \ref{prop:diam-preimage}, $\diam V_\alpha<\eps$.
+According to Proposition~\ref{prop:diam-preimage}, $\diam V_\alpha<\eps$.
 Clearly multiplicity of $\{V_\alpha\}$ is at most $d+1$.
 Thus, the statement follows.
 \qeds
 
 \parit{Proof of ``if'' in the main theorem (\ref{main}).} 
 Let $\spc{X}$ be a pro-Euclidean space of rank $\le d$.
-Assume $(\spc{P}_n)_{n=0}^\infty$ is a sequence of $d$-dimensional Euclidean polyhedra and 
+Assume $(\spc{P}_n)_{n=0}^\infty$ is a sequence of $d$-dimensional Euclidean polyhedrons and 
 $$\phi_{m,n}\: \spc{P}_m\to \spc{P}_n$$
 is an inverse system of short maps such that $\spc{X}=\varprojlim \spc{P}_n$.
 Let $\psi_n\:\spc{X}\to \spc{P}_n$ be the projections.
 
-According to theorem \ref{PL-Nash},
+According to Theorem~\ref{PL-Nash},
 given $\eps_{n+1}>0$ and a piecewise linear intrinsic isometry $\imath_n\:\spc{P}_n\z\to \EE^d$
 there is a piecewise linear intrinsic isometry 
 $\imath_{n+1}\:\spc{P}_{n+1}\z\to \EE^d$
 such that
-$$|\imath_{n+1}(x)\ \imath_{n}{\circ}\phi_{n+1,n}(x)|<\eps_{n+1}.$$
+$$|\imath_{n+1}(x)-\imath_{n}{\circ}\phi_{n+1,n}(x)|<\eps_{n+1}.$$
 for any $x\in \spc{P}_n$.
 It remains to show that sequence $\eps_{n}$ can be chosen on such a way that $\imath_n{\circ}\psi_n$ converges to an intrinsic isometry $\imath\:\spc{X}\to\EE^d$.
 
 Let us choose 
 $\eps_{n+1}>0$ so that 
 $$\eps_{n+1}<\tfrac12\min\l\{\eps_n,\delta(\imath_n,\tfrac1n)\r\},$$
- where $\delta(\imath_n,\tfrac1n)$ as in proposition \ref{prop:pull-back}.
+ where $\delta(\imath_n,\tfrac1n)$ as in Proposition~\ref{prop:pull-back}.
 Clearly, $\sum_i\eps_i<\infty$, thus the the following limit exists
 $$\imath=\lim_{n\to\infty} \imath_n\circ\psi_n,\ \ \imath\:\spc{X}\to\EE^d.$$
 Obviously, $\imath$ is short.
 Further, for any $x\in \spc{X}$,
-$$|\imath(x)\ \imath_n{\circ}\psi_n(x)|< \sum_{i=n+1}^\infty\eps_i<\delta(\imath_n,\tfrac1n).$$ 
-Thus, according to proposition \ref{prop:pull-back},
+$$|\imath(x)-\imath_n{\circ}\psi_n(x)|< \sum_{i=n+1}^\infty\eps_i<\delta(\imath_n,\tfrac1n).$$ 
+Thus, according to Proposition~\ref{prop:pull-back},
 $$\dist_{\imath}(x,x')+\tfrac1n
 >
 \dist_{\imath_n\circ\psi_n}(x,x')
 \ge
-|\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}.$$
-Since $|\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}\to |xx'|_{\spc{X}}$ as $n\to\infty$, the map $\imath\:\spc{X}\to\EE^d$ is an intrinsic isometry.\qeds
+|\psi_n(x)-\psi_n(x')|_{\spc{P}_n}.$$
+Since $|\psi_n(x)-\psi_n(x')|_{\spc{P}_n}\to |x-x'|_{\spc{X}}$ as $n\to\infty$, the map $\imath\:\spc{X}\to\EE^d$ is an intrinsic isometry.\qeds
 
 
 \parit{Proof of ``only if'' in the main theorem (\ref{main}).} 
 We will give a construction a polyhedron $\spc{P}$ 
 associated to an intrinsic isometry $\imath\: \spc{X}\to \EE^d$ and a tiling of $\EE^d$ by coordinate $a$-cubes.
 (The space $\spc{P}$ will be glued out of $a$-cubes.)
-The construction will be done in such a way that if a tiling $\tau'$ is a subdivision of a tiling $\tau$ then for corresponding polyhedra $\spc{P}'$ and $\spc{P}$ there will be a natural intrinsic isometry $\spc{P}'\to \spc{P}$. 
-Thus we will construct the needed inverse system of polyhedra out of nested subdivisions of $\EE^d$.
+The construction will be done in such a way that if a tiling $\tau'$ is a subdivision of a tiling $\tau$ then for corresponding polyhedrons $\spc{P}'$ and $\spc{P}$ there will be a natural intrinsic isometry $\spc{P}'\to \spc{P}$. 
+Thus we will construct the needed inverse system of polyhedrons out of nested subdivisions of $\EE^d$.
 
 Take sequences $a_n=\tfrac{1}{2^{n}}$ and set $r_n=\tfrac{1}{10}\cdot a_n$.
 Fix $n$ for a while and consider tiling of $\EE^d$ by coordinate $a_n$-cubes.
@@ -446,7 +451,7 @@ For each $\square_{n}^i$, consider all connected components $\{W^{i j}_n\}$ of
 $$B_{r_n}(\imath^{-1}(\square_{n}^i))\i \spc{X},$$
 where $B_r(S)$ denotes $r$-neighborhood of set $S$.
 
-According to proposition \ref{int>int},  $\spc{X}$ is a length space.
+According to Proposition~\ref{int>int},  $\spc{X}$ is a length space.
 In particular, each set $W^{i j}_n$ is open and contains a ball of radius $r_n$.
 Thus for fixed $i$ the collection of open sets $\{W^{i j}_n\}$ is finite .
 Therefore the set of all $\{W^{i j}_n\}$ for all $\{\square^{i}_n\}$ forms a finite open cover of $\spc{X}$.
@@ -470,9 +475,9 @@ $\psi_n=\phi_{m,n}\circ\psi_m$ for any pair $m\ge n$.
 
 In order to prove that $\spc{X}=\varprojlim \spc{P}_n$, 
 it only remains to show that
-$$|xx'|_{\spc{X}}
+$$|x-x'|_{\spc{X}}
 \le
-\lim_{n\to\infty}|\psi_n(x)\,\psi_n(x')|\eqno(*)$$
+\lim_{n\to\infty}|\psi_n(x)-\psi_n(x')|_{\spc{P}_n}\eqno(*)$$
 for all $x,x'\in\spc{X}$.
 
 
@@ -480,16 +485,16 @@ Given a subset $K\i \spc{P}_n$,
 let us denote by $K^*\i \spc{X}$ the union of all $W^{i j}_n\i \spc{X}$ such that $\square^{i j}_n\cap K\not=\emptyset$.
 Clearly, if $K$ is connected then so is $K^*$.
 More over, $\imath(K^*)\i B_{r_n}(\imath_n(K))$.
-Thus, from proposition \ref{prop:diam-preimage}, we have that for any $\eps>0$ we can find $\delta>0$ such that 
+Thus, from Proposition~\ref{prop:diam-preimage}, we have that for any $\eps>0$ we can find $\delta>0$ such that 
 $$r_n+\diam K<\delta\ \ \Longrightarrow\ \ \diam K^*<\eps \eqno(**)$$
 
 Assume $(*)$ is wrong,
 then one can choose $x,x'\in\spc{X}$ and $\eps,\ell>0$ so that
 \newcommand*{\threestar}{\mathrel{\vcenter{\offinterlineskip\hbox{$\mkern4.5mu {*}$}\hbox{${*}{*}$}}}}
-$$\dist_{\imath,\eps}(x,x')>\ell> |\psi_n(x)\,\psi_n(x')|_{\spc{P}_n}\eqno(\threestar)$$
+$$\dist_{\imath,\eps}(x,x')>\ell> |\psi_n(x)-\psi_n(x')|_{\spc{P}_n}\eqno(\threestar)$$
 for all $n$.
 In particular, for all $n$ there is a path $\gamma_n\:[0,1]\to \spc{P}_n$ from $\psi_n(x)$ to $\psi_n(x')$ with length $<\ell$.
-Choose $\delta=\delta(\imath,\eps)$ as in proposition \ref{prop:diam-preimage}.
+Choose $\delta=\delta(\imath,\eps)$ as in Proposition~\ref{prop:diam-preimage}.
 Let $0\z=t_0\z<t_1\z<\dots<t_m=1$ be such that 
 \newcommand*{\fourstar}{%
 \mathrel{\vcenter{\offinterlineskip
@@ -501,21 +506,21 @@ For each $t_i$ choose a point $x_i\z\in \gamma(t_i)^*\i \spc{X}$; clearly
 \newcommand*{\fivestar}{%
 \mathrel{\vcenter{\offinterlineskip
 \hbox{$\mkern4.5mu {*}{*}$}\hbox{${*}{*}{*}$}}}}
-$$|\imath(x_i)\ \imath_n{\circ}\gamma(t_i)|_{\EE^d}
+$$|\imath(x_i)-\imath_n{\circ}\gamma(t_i)|_{\EE^d}
 <2\cdot a_n.
 \eqno(\fivestar)$$
 Note that $x_{i-1},x_i\in \gamma([t_{i-1},t_i])^*$.
 Thus, $(\fourstar)$ and $(**)$ imply that 
-$$|x_{i-1}x_i|<\diam \gamma_n([t_{i-1},t_i])^*<\eps$$
+$$|x_{i-1}-x_i|<\diam \gamma_n([t_{i-1},t_i])^*<\eps$$
 for all large $n$.
 Thus $x_i$ forms an $\eps$-chain from $x$ to $x'$, and $(\fivestar)$ implies
 \begin{align*}
  \dist_{\imath,\eps}(x,x')
 &\le 
-\sum_{i=1}^m|\imath(x_{i-1})\,\imath(x_i)|
+\sum_{i=1}^m|\imath(x_{i-1})-\imath(x_i)|
 <\\
 &<
-\sum_{i=1}^m|\imath_n{\circ}\gamma_n(t_{i-1})\ \imath_n{\circ}\gamma_n(t_i)|
+\sum_{i=1}^m|\imath_n{\circ}\gamma_n(t_{i-1})-\imath_n{\circ}\gamma_n(t_i)|
 +4\cdot a_n\cdot \lceil\tfrac{\ell}{\delta}\rceil
 <\\
 &<\ell+4\cdot a_n\cdot \lceil\tfrac{\ell}{\delta}\rceil
@@ -525,17 +530,17 @@ which contradicts $(\threestar)$ for large enough $n$.
 
 \parit{Remark.} In the constructed inverse system 
 $(\phi_{m,n},\spc{P}_n)$, the images of $\phi_{m,n}$ form a $\sqrt{d}\cdot a_n$-net in $\spc{P}_n$.
-It follows that the space $\spc{X}$ is isometric to the Gromov--Hausdorff limit of $\spc{P}_n$ (see also section~\ref{preliminaries}).
+It follows that the space $\spc{X}$ is isometric to the Gromov--Hausdorff limit of $\spc{P}_n$ (see also Section~\ref{preliminaries}).
 
-\parit{Proof of proposition \ref{minkowski}.}
-The inequality $d\le m$ follow from trivial statement \ref{top-dim}.
+\parit{Proof of \ref{minkowski}.}
+The inequality $d\le m$ follow from trivial statement (\ref{top-dim}).
 In the proof of the second part, we use the following two statements:
 
 \begin{enumerate}
  \item Assume $\imath\:\Omega\i\MM^d \to\EE^m$ is an intrinsic isometry, then it is a Lipschitz map for a Euclidean structure on $\Omega$.
 Thus, according to Rademacher's theorem (see \cite[3.1.6]{ref-to-df}) the differential $d_p\imath$ is well defined almost all $p\in \Omega$.
  \item For any curve $\gamma(t)$ with natural parameter in a metric space, we have that for almost all values of parameter $t_0$ we have
-$$|\gamma({t_0})\,\gamma({t_0+\eps})|=\eps+o(\eps),$$
+$$|\gamma({t_0})-\gamma({t_0+\eps})|=\eps+o(\eps),$$
 see  \cite[2.7.5]{BBI}.
 \end{enumerate}
 
@@ -561,32 +566,32 @@ That is, the norm $\|{*}\|$ is Euclidean.
 
 \section{About path isometries}\label{path.isometry}
 
-In this section we will relate the notion of intrinsic isometry defined in section~\ref{preliminaries} with more common (but less natural) notion of path and weak path isometries.
+In this section we will compare the notion of intrinsic isometry defined in Section~\ref{preliminaries} with more common (but less natural) notion of path and weak path isometries.
 
 \begin{thm}{Definition}\label{def:path-iso}
 Let $\spc{X}$ and $\spc{Y}$ be two length spaces.
 A map $\imath\: \spc{X}\to \spc{Y}$ is called 
 \begin{enumerate}
 \item\emph{path isometry} if for any path $\gamma\:[0,1]\to \spc{X}$ we have
-$$\length \gamma=\length \imath\circ\gamma.$$
+$$\length \gamma=\length (\imath\circ\gamma).$$
 \item\emph{weak path isometry} if for any rectifiable path $\gamma\:[0,1]\to \spc{X}$ we have
-$$\length \gamma=\length \imath\circ\gamma.$$
+$$\length \gamma=\length (\imath\circ\gamma).$$
 \end{enumerate}
 \end{thm}
 
-As it was noted in section~\ref{preliminaries}, any intrinsic isometry is a path isometry 
+As it was noted in Section~\ref{preliminaries}, any intrinsic isometry is a path isometry 
 (and therefore, a weak path isometry).
 Next we will show that converse does not hold.
 Similar counterexamples for weak path isometries are much simpler:
-one can take a left-invariant sub-Riemannian metric $d$ on Heisenberg group $H$ then factorizing by center gives an weak path isometry $(H,d)\to\EE^2$ (which is not a path isometry and thus not an intrinsic isometry).
+one can take a left-invariant sub-Riemannian metric $d$ on Heisenberg group $H$ then factorizing by center gives an weak path isometry $(H,d)\to\EE^2$ (which is not a path isometry and therefore not an intrinsic isometry).
 
-\begin{thm}{Example}\label{exam:path} There is a length space $\spc{X}$ and a path isometry $f\:\spc{X}\to \RR$ such that $f^{-1}(0)$ is a  nontrivial connected subset.
+\begin{thm}{Example}\label{exam:path} There is a compact length space $\spc{X}$ and a path isometry $f\:\spc{X}\z\to \RR$ such that $f^{-1}(0)$ is a  nontrivial connected subset.
 Moreover, the Lebesgue covering dimension of $f^{-1}(0)$ can be made arbitrary large.
 \end{thm}
 
 In particular, an analog of \ref{top-dim} does not hold for path isometries.
 
-The following construction was suggested by D.~Burago;
+The following construction was suggested by Dmitri Burago;
 it is based on two ideas: 
 (1) the construction in \cite[3.1]{BIS},
 (2) the construction of \emph{pseudo-arc} given in \cite{knaster} (see also the survey \cite{pseudo.arc} and references therein).
@@ -608,7 +613,7 @@ $|h(t_i')-h(t_i)|\le\eps$ for $i\in\{1,2\}$.
 The existence of $\eps$-crooked map for any given $\eps>0$ is easy to prove by induction on $n=\lceil\tfrac1\eps\cdot{\length\JJ}\rceil$.
 
 \parit{Proof.}
-Stat with a metric graph\footnote{That is, locally finite graph with intrinsic metric, such that each edge is isometric to a real interval.} $\Gamma$;
+Stat with a metric graph\footnote{That is, locally finite graph with length metric, such that each edge is isometric to a real interval.} $\Gamma$;
 consider its completion $\bar\Gamma$.
 Set $\grave\Gamma=\bar\Gamma\backslash\Gamma$.
 Consider the map $f\:\bar\Gamma\to\RR$, where $f(x)$ is the distance from $x$ to $\grave\Gamma$.
@@ -621,6 +626,12 @@ Consider a sequence of real intervals $\JJ_n$ with short $\eps_n$-crooked maps $
 We can assume that $\JJ_0=[-1,1]$.
 
 The topological inverse limit $\JJ_\infty=\varprojlim \JJ_n$ is a connected compact space with no nontrivial paths; in fact $\JJ_\infty$ is a pseudo-arc.
+
+For each $n$, chose a $\eps_n$-dense set of \emph{vertexes} in $\JJ_n$.
+Connect each vertex $x$ in $\JJ_n$ to the point $h_n(x)$ in  $\JJ_{n-1}$ by an edge of length $\tfrac1{2^n}$.
+Set $\Gamma$ to be the obtained graph.
+
+
 
 Let us denote by $\Gamma_n$ the finite subgraph of $\Gamma$ induced by all vertexes in $\JJ_0,\JJ_2,\dots,\JJ_{n-1}$.
 Note that there is a short map $\phi_n\:\bar\Gamma\to\Gamma_{n}$ that is identity on $\Gamma_{n}$ and such that
@@ -647,9 +658,9 @@ Note that $\alpha_n$ runs at most $2^n$ times from $\JJ_n$ to $\JJ_{n+1}$ theref
 
 Note that the intersection $\bigcap_n\alpha_n$ is an arc in $\grave\Gamma$ of diameter at least $1$, but $\grave\Gamma$ has no nontrivial arcs --- a contradiction.
 
-Equip $\bar\Gamma$ with the length metric induced by $f$;
-that is the diastance between two points $x,y\in \bar\Gamma$ defined as the exact lower bound on the lengths of $f\circ\alpha$ for all paths $\alpha$ from $x$ to $y$.
-With this metric, the map $f$ is a path isometry; hence the first part follows.
+Let $d$ be the length metric induced by $f$ on $\bar\Gamma$;
+that is, the distance $d(x,y)$ is defined as the exact lower bound on the lengths of $f\circ\alpha$ for all paths $\alpha$ from $x$ to $y$.
+Note that the map $f\:(\bar\Gamma,d)\to\RR$ is a path isometry and the set $\grave\Gamma$ remains connected in $(\bar\Gamma,d)$; hence the first part follows
 
 \parit{Second part.}
 We construct a graph $\Gamma^{(m)}$ to make $\grave\Gamma^{(m)}$ homeomorphic to a product on $m$ copies of $\grave\Gamma$.
@@ -660,10 +671,10 @@ The set of vertexes of $\Gamma^{(2)}$ is disjoint union $\sqcup_n (\mathop{\rm V
 We connect two vertexes $(x,y)\in \mathop{\rm Vert}\JJ_n\times \mathop{\rm Vert}\JJ_n$ and $(x',y')\in \mathop{\rm Vert}\JJ_k\times \mathop{\rm Vert}\JJ_k$ iff the pairs $(x,x')$  and $(y,y')$ were connected in $\Gamma$; the length of this edge must be maximum of lengths of edges $xx'$ and $y y'$ (we assume that a vertex is connected to it-self by an edge of length $0$).
 
 Clearly, there is a homeomorphism $\grave\Gamma^{(2)}\to\grave\Gamma\times\grave\Gamma$.
-Note that there are two short coordinate projections $\varsigma_1,\varsigma_2\:\Gamma^{(2)}\to\Gamma$.
+Note that there are two short coordinate projections $\varsigma_1,\varsigma_2\:\Gamma^{(2)}\to\Gamma$ which can be extended to the projections $\bar\varsigma_1,\bar\varsigma_2\:\bar\Gamma^{(2)}\to\bar\Gamma$.
 Thus for any path $\alpha\:[0,1]\to\bar\Gamma^2$, we have that total length of $\alpha\backslash\grave\Gamma^{(2)}$ is at least as big as 
-$\max_i|\varsigma_i{\circ}\alpha(0)\, \varsigma_i{\circ}\alpha(1)|$.
-Hence the second statement follows.
+$\max_i|\varsigma_i{\circ}\alpha(0)- \varsigma_i{\circ}\alpha(1)|$.
+Hence the second part follows.
 \qeds
 
 
@@ -674,7 +685,7 @@ Hence the second statement follows.
 
 A length space $\spc{M}$ is called \emph{Minkowski $d$-polyhedron} if there is a finite triangulation of $\spc{M}$ such that each simplex is isometric to a simplex in a Minkowski space.
 Correspondingly, a compact metric space $\spc{X}$ is called \emph{pro-Minkowski space} of rank $\le d$ 
-if it can be presented as an inverse limit of Minkowski $d$-polyhedra.
+if it can be presented as an inverse limit of Minkowski $d$-polyhedrons.
 
 \begin{thm}{Question}
 Is it true that any length space with Lebesgue's covering dimension $d$ is a pro-Minkowski space of rank $d$? 
@@ -688,36 +699,39 @@ Is it true that any metric space which homeomorphic to a disk is a pro-Minkowski
 
 One can reformulate it philosophically: 
 \textit{Is there any essential difference between Finsler metric and general metric on $n$-manifold?}
-This question was asked by D.~Burago; 
+This question was asked by Dmitri Burago; 
 it was also original motivation for this paper
 (see also a related example \cite[theorem 1]{BIS}).
 
 If one removes restriction on dimension, 
-then the answer to the above question is YES.
+then the answer to the above question is ``yes''.
 Namely, the following exercise can be solved by using Kuratowski embedding $x\mapsto \mathop{\rm dist}_x$.
 
 \begin{thm}{Exercise}
 Show that any compact length space is an inverse limit 
-of Minkowski polyhedra $\spc{M}_n$ with $\dim \spc{M}_n\to\infty$.
+of Minkowski polyhedrons $\spc{M}_n$ with $\dim \spc{M}_n\to\infty$.
 \end{thm}
 
 \begin{thm}{Question}
 Is it true that any path isometry from a closed Euclidean ball to Euclidean space is an intrinsic isometry? 
 \end{thm}
 
-
+The answer is ``yes'' in 2-dimensional case, a proof can be build on the idea suggested by Taras Banakh in \cite{banakh}.
 
 
 \begin{thebibliography}{52} 
-\bibitem[Akopyan]{akopjan} Akopyan, A. V.,
+\bibitem{akopjan} Akopyan, A. V.,
 \textit{A piecewise linear analogue of Nash--Kuiper theorem},
 a preliminary version (in Russian) can be found on
 \href{http://www.moebiuscontest.ru/files/2007/akopyan.pdf}{www.moebiuscontest.ru}
 
-\bibitem[Akopyan--Tarasov]{akopjan-tarasov} Akopyan, A. V.; Tarasov, A. S.
+\bibitem{akopjan-tarasov} Akopyan, A. V.; Tarasov, A. S.
 \textit{A constructive proof of Kirszbraun's theorem.} 
 (Russian) Mat. Zametki 84 (2008), no. 5, 781--784. 
-\bibitem[Berestovskii]{berestovskii} Berestovskii, V. N.,
+
+\bibitem{banakh} Banakh, T. \textit{Running most of the time in a connected set},  MathOverflow   \texttt{https://mathoverflow.net/q/308172},
+
+\bibitem{berestovskii} Berestovskii, V. N.,
    \textit{The structure of locally compact homogeneous spaces with an
    intrinsic metric} (Russian),
    {Sibirsk. Mat. Zh.},
@@ -731,16 +745,24 @@ a preliminary version (in Russian) can be found on
       {1989},
       {1},
     {16--25}
-\bibitem[BIS]{BIS} Burago, D.; Ivanov, S.; Shoenthal, D.   \textit{Two counterexamples in low dimensional length geometry,}
+\bibitem{BIS} Burago, D.; Ivanov, S.; Shoenthal, D.   \textit{Two counterexamples in low dimensional length geometry,}
 St.Petersburg Math. J. Vol. 19 (2008), No. 1, Pages 33--43
-\bibitem[BBI]{BBI} Burago, D.; Burago, Yu.; Ivanov, S., \textit{A course in metric geometry.} Graduate Studies in Mathematics, 33. American Mathematical Society, Providence, RI, 2001. xiv+415 pp. ISBN: 0-8218-2129-6
-\bibitem[Brehm]{brehm} Brehm, U., \textit{Extensions of distance reducing mappings to piecewise congruent mappings on $R\sp{m}$.}  J. Geom.  16  (1981), no. 2, 187--193.
-\bibitem[Federer]{ref-to-df} Federer, H., \textit{Geometric Measure Theory,} Springer, 1969.
-\bibitem[Knaster]{knaster} Knaster, B. Un continu dont tout sous-continu est ind\'ecomposable. Fundamenta math. 3, 247--286 (1922).
-\bibitem[Krat]{krat} Krat, S. \textit{Approximation Problems in Length Geometry,} Thesis, 2005
-\bibitem[Lewis]{pseudo.arc}Lewis, Wayne The pseudo-arc. Bol. Soc. Mat. Mexicana (3) 5 (1999), no. 1, 25--77.
+
+\bibitem{BBI} Burago, D.; Burago, Yu.; Ivanov, S., \textit{A course in metric geometry.} Graduate Studies in Mathematics, 33. American Mathematical Society, Providence, RI, 2001. xiv+415 pp. ISBN: 0-8218-2129-6
+
+\bibitem{brehm} Brehm, U., \textit{Extensions of distance reducing mappings to piecewise congruent mappings on $R\sp{m}$.}  J. Geom.  16  (1981), no. 2, 187--193.
+
+\bibitem{ref-to-df} Federer, H., \textit{Geometric Measure Theory,} Springer, 1969.
+
+\bibitem{knaster} Knaster, B. Un continu dont tout sous-continu est ind\'ecomposable. Fundamenta math. 3, 247--286 (1922).
+
+\bibitem{krat} Krat, S. \textit{Approximation Problems in Length Geometry,} Thesis, 2005.
+
+\bibitem{pseudo.arc}Lewis, Wayne The pseudo-arc. Bol. Soc. Mat. Mexicana (3) 5 (1999), no. 1, 25--77.
+
 %\bibitem[Nadler]{pseudo.arc}  Nadler, Sam B., Jr. \textit{Continuum theory. An introduction.} Monographs and Textbooks in Pure and Applied Mathematics, 158. Marcel Dekker, Inc., New York, 1992. xiv+328 pp.
-\bibitem[Gromov]{gromov-PDE}  Gromov, M.,
+
+\bibitem{gromov-PDE}  Gromov, M.,
 \textit{Partial differential relations},
  Ergebnisse der Mathematik und ihrer Grenzgebiete (3) 
 {9},
@@ -749,7 +771,9 @@ St.Petersburg Math. J. Vol. 19 (2008), No. 1, Pages 33--43
  {1986},
  {x+363},
 %\bibitem[Gromov 01]{gromov-Met} Metric Structures for Riemannian and Non-Riemannian Spaces
-\bibitem[Zalgaller]{zalgaller} Zalgaller, V. A. Isometric imbedding of polyhedra. (Russian)  Dokl. Akad. Nauk SSSR  123  1958 599--601.
+
+\bibitem{zalgaller} Zalgaller, V. A. Isometric imbedding of polyhedra. (Russian)  Dokl. Akad. Nauk SSSR  123  1958 599--601.
+
 \end{thebibliography}
 
 \end{document}

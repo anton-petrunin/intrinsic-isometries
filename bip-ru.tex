@@ -61,7 +61,7 @@ $$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 допускает внутреннюю изометрию в $\EE^d$.
 \end{thm}
 
-Для изометрий на путях это теорема была доказана Михаилом Громовым \cite[2.4.11]{gromov-PDE},
+Для изометрий на путях эта теорема была доказана Михаилом Громовым \cite[2.4.11]{gromov-PDE},
 но доказательство работает для внутренних изометрий  без каких-либо изменений.
 Из этой теоремы следует, что произвольный предел возрастающей последовательности римановых метрик на фиксированном многообразии допускает внутреннюю изометрию в $\EE^d$,
 доказывается аналогично условию достаточности в основной теореме (\ref{main}).
@@ -127,8 +127,12 @@ $$|f(x)-\imath(x)|_{\EE^d}<\eps$$
 
 \smallskip
 
+{\sloppy
+
 \parbf{Благодарности.}
 Автор выражает признательность Арсению Акопяну, Дмитрию Бураго, Сергею Иванову, Александру Лычаку и анонимному референту за полезные письма и беседы.
+
+}
 
 
 
@@ -384,6 +388,8 @@ $B_{r_n}(\imath^{-1}(\square_{n}^i))\subset \spc{X}$,
 куб $\square^{i_1j_1}_n$ склеен с $\square^{i_2j_2}_n$ по $(\imath^{i_2j_2}_n)^{-1}\circ\imath^{i_1j_1}_n$ тогда и только тогда, когда $W^{i_1j_1}_n\cap W^{i_2j_2}\not=\emptyset$.
 (Заметьте, что $(\imath^{i_2j_2}_n)^{-1}\circ\imath^{i_1j_1}_n$ изометрично отображает одну грань $\square^{i_1j_1}_n$ на грань $\square^{i_2j_2}_n$.)
 
+{\sloppy 
+
 Построенный полиэдр $\spc{P}_{n}$ допускает естественную кусочно-линейную внутреннюю изометрию $\imath_n\:\spc{P}_{n}\to\EE^d$,
 определяемую как
 $\imath_n(x)=\imath^{i j}_n(x)$ при $x\in \square^{i j}_n$.
@@ -396,6 +402,8 @@ $\imath_n\circ\psi_{n}=\imath$ и
 $$ \psi_{n}(x)\in\square^{i j}_n\subset \spc{P}_n\ \ \Rightarrow\ \ x\in W^{i j}_n\subset \spc{X}.$$
 Очевидно, $\spc{P}_n$ вместе с $\phi_{m,n}$ образуют обратную систему, и
 $\psi_n=\phi_{m,n}\circ\psi_m$ при всех $m\ge n$.
+
+}
 
 Чтобы доказать $\spc{X}=\varprojlim \spc{P}_n$, 
 достаточно проверить, что
@@ -517,7 +525,7 @@ $$\length \gamma=\length \imath\circ\gamma.$$
 {
 
 \begin{wrapfigure}{r}{32mm}
-\begin{lpic}[t(-8mm),b(4mm),r(0mm),l(0mm)]{pics/pseudoarc(0.2)}
+\begin{lpic}[t(-9mm),b(4mm),r(0mm),l(0mm)]{pics/pseudoarc(0.2)}
 \lbl[b]{140,5;$\II$}
 \lbl[l]{16,200;$\JJ$}
 \lbl[r]{6,25;$\eps$}
@@ -556,7 +564,7 @@ $|h(t_i')-h(t_i)|\le\eps$ для $i\in\{1,2\}$.
 
 Далее мы построим граф $\Gamma$ такой, что $\grave\Gamma$ связанно и содержит пару точек, которые нельзя соединить путём $\alpha$ таким, что путь $f\circ\alpha$ имеет произвольно малую длину. 
 
-Зафиксируем последовательность положительных чисел $\eps_n$, которая быстро  сходится к нулю.
+Выберем последовательность положительных чисел $\eps_n$, которая быстро  сходится к нулю.
 Рассмотрим последовательность интервалов $\JJ_n$ с короткими $\eps_n$-скрюченными отображениями $h_n\:\JJ_{n}\to \JJ_{n-1}$.
 Можно предположить, что $\JJ_0=[-1,1]$.
 
@@ -572,7 +580,7 @@ $|h(t_i')-h(t_i)|\le\eps$ для $i\in\{1,2\}$.
 при $m\ge n$.
 В частности, $\phi_n$ отображает $\grave\Gamma$ на $\JJ_{n-1}$.
 
-Предположим, что концы псевдодуги $\grave\Gamma$ можно соединить путём $\alpha\:[0,1]\to\bar\Gamma$, что
+Предположим, что концы псевдодуги $\grave\Gamma$ можно соединить путём $\alpha$ таким, что
 \[\length f\circ\alpha<\tfrac1{10}.\]
 Не умоляя общности, можно предположить, что $\alpha$ простая кривая; то есть, не имеет самопересечений.
 
@@ -661,12 +669,12 @@ $\alpha_n$ содержит $3$ непересекающихся дуги так
 А.~В.~Акопян, А.~С.~Тарасов,
 \textit{Конструктивное доказательство теоремы Киршбрауна} Метем. заметки (2008) 84, № 5, 781---784. 
 
+\bibitem{banakh} T. Banakh,  \textit{Running most of the time in a connected set},  MathOverflow   \texttt{https://mathoverflow.net/q/308172},
+
 \bibitem{BBI} Д. Ю. Бураго, Ю. Д. Бураго, С. В. Иванов, \textit{Курс метрической геометрии,} - М. ; Ижевск, 2004, 496 с.
 
 \bibitem{BIS}  D. Burago, S. Ivanov, D. Shoenthal, \textit{Two counterexamples in low dimensional length geometry,}
 Алгебра и Анализ  19 (2007), № 1, стр. 46---59
-
-\bibitem{banakh} T. Banakh,  \textit{Running most of the time in a connected set},  MathOverflow   \texttt{https://mathoverflow.net/q/308172},
 
 \bibitem{brehm} U. Brehm, \textit{Extensions of distance reducing mappings to piecewise congruent mappings on $\RR^m$.}  J. Geom.  16  (1981), no. 2, 187--193.
 

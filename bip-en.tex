@@ -182,7 +182,7 @@ if and only if $\spc{X}$ is a pro-Euclidean space of rank $\le d$.
 The proof is straightforward. 
 I like the formulation of the theorem.
 It is rare when inverse limits help to solve a natural problem in metric geometry;
-the only other example I know is the charcterization of  homogeneous
+the only other example I know is the characterization of  homogeneous
 locally compact metric spaces given by Valerii Berestovskii~\cite{berestovskii}.
 
 Note that the statement in theorem \ref{thm:gromov} (in the compact case) 
@@ -225,7 +225,7 @@ and an anonymous referee for helpful letters and discussions.
 \parbf{Standard definitions.}
 Given a metric space $\spc{X}$ and two points $x,x'\in \spc{X}$, we will denote by $|x-x'|=|x-x'|_{\spc{X}}$ the distance from $x$ to $x'$ in $\spc{X}$.
 
-A \emph{length space} is a metric space such that for any two points $x,x'$ the distance $|x - x'|$ coincides with the infimum of lengths of curves connecting $x$ and $x'$.
+A \emph{length space} is a metric space such that for any two points $x,x'$ the distance $|x - x'|$ coincides with the greatest lower bound of lengths of curves connecting $x$ and $x'$.
 
 A map $f\:\spc{X}\to \spc{Y}$ between metric spaces $\spc{X}$ and $\spc{Y}$ is called \emph{short} if for any $x,x'\in \spc{X}$ we have
 $$|f(x)-f(x')|_{\spc{Y}}\le |x -x'|_{\spc{X}}.$$
@@ -272,7 +272,7 @@ Set
 $$\dist_{f,\eps}(x,x')
 =
 \inf\l\{\sum_{i=1}^n|f(x_{i-1})-f(x_{i})|_{\spc{Y}}\r\}$$
-where the infimum is taken along all  $\eps$-chains $(x_i)_{i=0}^n$ from $x$ to $x'$.
+where the greatest lower bound is taken along all  $\eps$-chains $(x_i)_{i=0}^n$ from $x$ to $x'$.
 
 Clearly $\dist_{f,\eps}$ is a pseudometric%
 \footnote{That is, it satisfies triangle inequality, it is symmetric, non-negative and $\dist_{f,\eps}(x,x)=0$, but it might happen that $\dist_{f,\eps}(x,x')=0$ for $x\not=x'$.}
@@ -362,7 +362,7 @@ $$\diam \imath(W)<\delta\ \ \Longrightarrow\ \ \diam W<\eps.$$
 \end{thm}
 
 \parit{Proof.}
-Assume contrary; that is, there is a sequence of connected subsets $W_n\i \spc{X}$ such that 
+Assume contrary; that is, there is a sequence of connected subsets $W_n\z\i \spc{X}$ such that 
 $\diam \imath(W_n)\to 0$ as $n\to\infty$ but $\diam W_n>\eps$.
 Thus there are two sequences of points $x_n,x_n'\in W_n$ such that $|x_n -x_n'|\ge\eps$. 
 Pass to a subsequence of $n$ so that $W_n\to W$ in Hausdorff sense and $x_n\to x$, $x_n'\to x'$.
@@ -457,7 +457,7 @@ Thus for fixed $i$ the collection of open sets $\{W^{i j}_n\}$ is finite .
 Therefore the set of all $\{W^{i j}_n\}$ for all $\{\square^{i}_n\}$ forms a finite open cover of $\spc{X}$.
 For each $W^{i j}_n$ make an isometric copy $\square^{i j}_n$ of $\square^{i}_n$ and fix an isometry $\imath^{i j}_n\:\square^{i j}_n\to\square^{i}_n$.
 The Euclidean polyhedron $\spc{P}_{n}$, is glued from $\square^{i j}_n$ by the following rule:
-glue $\square^{i_1j_1}_n$ to $\square^{i_2j_2}_n$ along $(\imath^{i_2j_2}_n)^{-1}\circ\imath^{i_1j_1}_n$ iff $W^{i_1j_1}_n\cap W^{i_2j_2}\not=\emptyset$.
+glue $\square^{i_1j_1}_n$ to $\square^{i_2j_2}_n$ along $(\imath^{i_2j_2}_n)^{-1}\circ\imath^{i_1j_1}_n$ if and only if $W^{i_1j_1}_n\cap W^{i_2j_2}\not=\emptyset$.
 (The map $(\imath^{i_2j_2}_n)^{-1}\circ\imath^{i_1j_1}_n$ sends one of the faces of $\square^{i_1j_1}_n$ isometrically to a  face of $\square^{i_2j_2}_n$.)
 
 The constructed polyhedron $\spc{P}_{n}$ admits a natural piecewise linear intrinsic isometry $\imath_n\:\spc{P}_{n}\to\EE^d$,
@@ -657,7 +657,7 @@ $\alpha_n$ contains $3$ disjoint subarcs such that $\phi_1$ maps each onto $[-c_
 each of these arcs contains $3$ disjoint subarcs such that $\phi_1$ maps each  onto $[-c_n+2\cdot\eps_n,c_n-2\cdot \eps_n]$ and so on.
 It follows that there are $3^n$ disjoint subarcs $\beta_1,\dots \beta_{3^n}$ such that $\phi_1(\beta_i)\supset [-c_{n+1},c_{n+1}]$.
 Note that $\alpha_n$ runs at most $2^n$ times  from $\JJ_n$ to $\JJ_{n+1}$
-and each vistit to $\JJ_n$ is short.
+and each visit to $\JJ_n$ is short.
 Therefore $\beta_i\subset \bar\Gamma\backslash\Gamma_{n+1}$ for some $i$; denote this arc by $\alpha_{n+1}$.
 
 Note that the intersection $\bigcap_n\alpha_n$ is an arc in $\grave\Gamma$ of diameter at least $1$, but $\grave\Gamma$ has no nontrivial arcs --- a contradiction.
@@ -672,12 +672,11 @@ We construct a graph $\Gamma^{(m)}$ to make $\grave\Gamma^{(m)}$ homeomorphic to
 We will do the case $m=2$;
 the others are analogous.
 The set of vertexes of $\Gamma^{(2)}$ is disjoint union $\sqcup_n (\mathop{\rm Vert}\JJ_n\times \mathop{\rm Vert}\JJ_n)$, where $\mathop{\rm Vert}\JJ_n$ denotes the set of vertexes of $\JJ_n$.
-We connect two vertexes $(x,y)\in \mathop{\rm Vert}\JJ_n\times \mathop{\rm Vert}\JJ_n$ and $(x',y')\in \mathop{\rm Vert}\JJ_k\times \mathop{\rm Vert}\JJ_k$ iff the pairs $(x,x')$  and $(y,y')$ were connected in $\Gamma$; the length of this edge must be maximum of lengths of edges $xx'$ and $y y'$ (we assume that a vertex is connected to it-self by an edge of length $0$).
+We connect two vertexes $(x,y)\in \mathop{\rm Vert}\JJ_n\times \mathop{\rm Vert}\JJ_n$ and $(x',y')\in \mathop{\rm Vert}\JJ_k\times \mathop{\rm Vert}\JJ_k$ if and only if the pairs $(x,x')$  and $(y,y')$ were connected in $\Gamma$; the length of this edge must be maximum of lengths of edges $xx'$ and $y y'$ (we assume that a vertex is connected to it-self by an edge of length $0$).
 
 Clearly, there is a homeomorphism $\grave\Gamma^{(2)}\to\grave\Gamma\times\grave\Gamma$.
 Note that there are two short coordinate projections $\varsigma_1,\varsigma_2\:\Gamma^{(2)}\to\Gamma$ which can be extended to the projections $\bar\varsigma_1,\bar\varsigma_2\:\bar\Gamma^{(2)}\to\bar\Gamma$.
-Thus for any path $\alpha\:[0,1]\to\bar\Gamma^2$, we have that total length of $\alpha\backslash\grave\Gamma^{(2)}$ is at least as big as 
-$\max_i|\varsigma_i{\circ}\alpha(0)- \varsigma_i{\circ}\alpha(1)|$.
+Thus for any path $\alpha\:[0,1]\to\bar\Gamma^2$, we have that total length of $\alpha\backslash\grave\Gamma^{(2)}$ is at least as big as its projections.
 Hence the second part follows.
 \qeds
 

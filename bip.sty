@@ -2,13 +2,20 @@
 \usepackage{enumerate}
 
 
-%\usepackage[cp1251]{pdfstringdefPostHook}%эти две строчки для 
-
-
 \usepackage[russian]{babel}   %надо, он много чего делает
-\usepackage[cp1251]{inputenc} %просто говоришь что за кодировка, я предпочитаю эту потому, что в ней есть ковычки.
+\usepackage[utf8]{inputenc} %просто говоришь что за кодировка, я предпочитаю эту потому, что в ней есть ковычки.
 
 \usepackage{epsfig,lpic,wrapfig}
+
+\usepackage[colorlinks=true,
+citecolor=black,
+linkcolor=black,
+anchorcolor=black,
+filecolor=black,
+menucolor=black,
+urlcolor=black,
+unicode=true %для того, чтобы закладки в pdf-файлах правильно отображались
+]{hyperref}
 
 % Fix latex
 \def\smallskip{\vskip\smallskipamount}

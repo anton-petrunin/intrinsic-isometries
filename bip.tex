@@ -613,7 +613,7 @@ $|h(t_i')-h(t_i)|\le\eps$ for $i\in\{1,2\}$.
 The existence of $\eps$-crooked map for any given $\eps>0$ is easy to prove by induction on $n=\lceil\tfrac1\eps\cdot{\length\JJ}\rceil$.
 
 \parit{Proof.}
-Stat with a metric graph\footnote{That is, locally finite graph with length metric, such that each edge is isometric to a real interval.} $\Gamma$;
+Start with a metric graph\footnote{That is, locally finite graph with length metric, such that each edge is isometric to a real interval.} $\Gamma$;
 consider its completion $\bar\Gamma$.
 Set $\grave\Gamma=\bar\Gamma\backslash\Gamma$.
 Consider the map $f\:\bar\Gamma\to\RR$, where $f(x)$ is the distance from $x$ to $\grave\Gamma$.
@@ -627,13 +627,13 @@ We can assume that $\JJ_0=[-1,1]$.
 
 The topological inverse limit $\JJ_\infty=\varprojlim \JJ_n$ is a connected compact space with no nontrivial paths; in fact $\JJ_\infty$ is a pseudo-arc.
 
-For each $n$, chose a $\eps_n$-dense set of \emph{vertexes} in $\JJ_n$.
+For each $n$, choose an $\eps_n$-dense set of \emph{vertexes} in $\JJ_n$.
 Connect each vertex $x$ in $\JJ_n$ to the point $h_n(x)$ in  $\JJ_{n-1}$ by an edge of length $\tfrac1{2^n}$.
 Set $\Gamma$ to be the obtained graph.
 
 
 
-Let us denote by $\Gamma_n$ the finite subgraph of $\Gamma$ induced by all vertexes in $\JJ_0,\JJ_2,\dots,\JJ_{n-1}$.
+Let us denote by $\Gamma_n$ the finite subgraph of $\Gamma$ formed by $\JJ_0,\JJ_2,\dots,\JJ_{n-1}$ and all the edges between them.
 Note that there is a short map $\phi_n\:\bar\Gamma\to\Gamma_{n}$ that is identity on $\Gamma_{n}$ and such that
 \[\phi_n|_{\JJ_m}=h_n\circ\dots\circ h_{m}\:\JJ_m\to\JJ_{n-1}\] 
 for $m\ge n$.
@@ -641,20 +641,24 @@ In particular, $\phi_n$ maps the $\grave\Gamma$ onto $\JJ_{n-1}$.
 
 Assume that the ends of the pseudoarc $\grave\Gamma$ can be connected by a path $\alpha\:[0,1]\to\bar\Gamma$ such that 
 \[\length f\circ\alpha<\tfrac1{10}.\]
-Without loss of generality, we may assume that $\alpha$ is formed by a collection of edges in $\Gamma$ and some subset in $\grave\Gamma$.
+Without loss of generality, we may assume that $\alpha$ is a simple curve; that is, it has no self-intersections.
 
 Let construct a nested sequence of arcs $\alpha=\alpha_1\supset \alpha_2\supset \dots$ such that $\alpha_n\subset \bar\Gamma\backslash\Gamma_n$ and $\phi_1(\alpha_n)$ contains a segment of length $1$ for each $n$;
 in particular diameter of $\alpha_n$ is at least $1$.
 
 Set $c_1=1$; consider the sequence defined by $c_{n+1}=c_n-n\cdot \eps_n$.
 Since $\eps_n$ converges to zero very fast, we can assume that $c_n>\tfrac12$ for any $n$.
-Therefore it is sufficient to construct  of arcs $\alpha_1\supset \alpha_2\supset \dots$ such that $\phi_1(\alpha_n)\supset [-c_n,c_n]$ for any $n$.
+Therefore it is sufficient to construct arcs $\alpha_1\supset \alpha_2\supset \dots$ such that $\phi_1(\alpha_n)\supset [-c_n,c_n]$ for any $n$.
 
 Clearly we can take $\alpha_1=\alpha$.
-Assume the sequence is constructed up to $\alpha_n$, so $\phi(\alpha_n)\supset [-c_n,c_n]$.
-By the definition of crooked map,
-$\alpha_n$ contains $3^n$ disjoint subarcs $\beta_1,\dots \beta_{3^n}$ such that $\phi_1(\beta_i)\supset [-c_{n+1},c_{n+1}]$.
-Note that $\alpha_n$ runs at most $2^n$ times from $\JJ_n$ to $\JJ_{n+1}$ therefore $\beta_i\subset \bar\Gamma\backslash\Gamma_{n+1}$ for some $i$; denote this arc by $\alpha_{n+1}$.
+Assume the sequence is constructed up to $\alpha_n$, so $\phi_1(\alpha_n)\supset [-c_n,c_n]$.
+By the definition of a crooked map,
+$\alpha_n$ contains $3$ disjoint subarcs such that $\phi_1$ maps each onto $[-c_n+\eps_n,c_n-\eps_n]$;
+each of these arcs contains $3$ disjoint subarcs such that $\phi_1$ maps each  onto $[-c_n+2\cdot\eps_n,c_n-2\cdot \eps_n]$ and so on.
+It follows that there are $3^n$ disjoint subarcs $\beta_1,\dots \beta_{3^n}$ such that $\phi_1(\beta_i)\supset [-c_{n+1},c_{n+1}]$.
+Note that $\alpha_n$ runs at most $2^n$ times  from $\JJ_n$ to $\JJ_{n+1}$
+and each vistit to $\JJ_n$ is short.
+Therefore $\beta_i\subset \bar\Gamma\backslash\Gamma_{n+1}$ for some $i$; denote this arc by $\alpha_{n+1}$.
 
 Note that the intersection $\bigcap_n\alpha_n$ is an arc in $\grave\Gamma$ of diameter at least $1$, but $\grave\Gamma$ has no nontrivial arcs --- a contradiction.
 

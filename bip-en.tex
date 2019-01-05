@@ -13,6 +13,7 @@ pdfauthor={Anton Petrunin},
 ]{hyperref}
 
 \usepackage{epsfig,lpic,wrapfig}
+\renewcommand*{\HyperDestNameFilter}[1]{\jobname-#1}
 
 % Fix latex
 \def\smallskip{\vskip\smallskipamount}
